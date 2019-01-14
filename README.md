@@ -1,5 +1,3 @@
 # wine-quality
 
-## See red-wine-quality for classification analysis!
-
-## white-wine-quality (COMING SOON)
+## See red-wine-quality for classification analysis and white-wine-quality for regression analysis!
