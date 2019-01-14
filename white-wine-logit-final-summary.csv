@@ -1,0 +1,18 @@
+                    Logit Regression Results                    
+Dep. Variable:,quality         ,  No. Observations:  ,  4898    
+Model:        ,Logit           ,  Df Residuals:      ,  4889    
+Method:       ,MLE             ,  Df Model:          ,     8    
+Date:         ,Mon, 14 Jan 2019,  Pseudo R-squ.:     ,0.1788    
+Time:         ,12:22:20        ,  Log-Likelihood:    , -2100.9  
+converged:    ,True            ,  LL-Null:           , -2558.4  
+              ,                ,  LLR p-value:       ,3.470e-192
+                    ,   coef   , std err ,    z    ,P>|z| ,  [0.025 ,  0.975] 
+const               ,  -13.3987,    1.007,  -13.308, 0.000,  -15.372,  -11.425
+volatile_acidity    ,   -3.7453,    0.471,   -7.957, 0.000,   -4.668,   -2.823
+residual_sugar      ,    0.0552,    0.010,    5.660, 0.000,    0.036,    0.074
+chlorides           ,  -18.1374,    3.843,   -4.720, 0.000,  -25.669,  -10.605
+free_sulfur_dioxide ,    0.0093,    0.002,    3.804, 0.000,    0.005,    0.014
+ph                  ,    1.1357,    0.257,    4.419, 0.000,    0.632,    1.639
+sulphates           ,    1.2330,    0.319,    3.865, 0.000,    0.608,    1.858
+alcohol             ,    0.8598,    0.044,   19.597, 0.000,    0.774,    0.946
+bound_sulfur_dioxide,   -0.0034,    0.001,   -2.413, 0.016,   -0.006,   -0.001
