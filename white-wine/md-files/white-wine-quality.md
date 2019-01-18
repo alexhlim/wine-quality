@@ -290,7 +290,7 @@ sns.countplot(white_wine['quality'], color =dark_yellow)
 
 
 
-![png](images/output_11_1.png)
+![png](../images/output_11_1.png)
 
 
 The distribution of white wine frequencies looks roughly normal. The most common wines in the dataset are either 5 or 6. 
@@ -313,7 +313,7 @@ sns.set(font_scale = 1.2)
 ```
 
 
-![png](images/output_13_0.png)
+![png](../images/output_13_0.png)
 
 
 
@@ -421,7 +421,7 @@ check_dist(white_wine.alcohol, white_wine_log.alcohol)
 
 
 
-![png](images/output_21_1.png)
+![png](../images/output_21_1.png)
 
 
 The transformation helped a bit, but the feature already moderately normally distributed.
@@ -440,7 +440,7 @@ plot_features('alcohol', 'free_sulfur_dioxide', white_wine, axes[3])
 ```
 
 
-![png](images/output_23_0.png)
+![png](../images/output_23_0.png)
 
 
 We see that alcohol has a pretty strong relationship with quality, which may make it a good indicator. Second, in the graph 'alcohol vs. ph', wines with more alcohol content are better quality, however, the ph levels seem to vary with the range from 1.37-1.5.  In the graph 'alcohol vs. sulphates', we see that better quality wines tend to have a lower sulphate content (0.25-0.4) and higher alcohol content. But also there is more variation in our y variable, sulphates, in this graph. Lastly, we have 'alcohol vs. free_sulfur_dioxide', and these two features seem to very positively correlate with each other- good quality wines tend to have higher alcohol content and free_sulfur_dioxide. 
@@ -460,7 +460,7 @@ check_dist(white_wine.ph, white_wine_log.ph)
 
 
 
-![png](images/output_25_1.png)
+![png](../images/output_25_1.png)
 
 
 
@@ -475,7 +475,7 @@ plot_features('ph', 'free_sulfur_dioxide', white_wine, axes[2])
 ```
 
 
-![png](images/output_26_0.png)
+![png](../images/output_26_0.png)
 
 
 We see that ph has a slight positive relationship with quality, but not by much. There is most likely a range of ph that wine makers aim for in order to make their wine enjoyable and not too acidic. Next, in the graph 'ph vs. sulphates', the better wines tend to have lower sulphates. Finally, in 'ph vs. free_sulfur_dioxide', we see that most of the good wines are more concentrated in the upper region of the graph, with higher amounts of free_sulfur_dioxide.
@@ -495,7 +495,7 @@ check_dist(white_wine.sulphates, white_wine_log.sulphates)
 
 
 
-![png](images/output_28_1.png)
+![png](../images/output_28_1.png)
 
 
 
@@ -508,7 +508,7 @@ plot_features('sulphates', 'free_sulfur_dioxide', white_wine_log, axes[1])
 ```
 
 
-![png](images/output_29_0.png)
+![png](../images/output_29_0.png)
 
 
 We do not see much of a relationship here with quality and sulphates. It might seem there is a slight negative relationship because quality = 9 is slightly lower than the others, however, we need to realize that we do not have many samples for that category, so it may be misleading. Here in the second graph, 'sulphates vs. sulfur_dioxide, we see that wine quailities 7, 8, and 9 seem be in roughly the same region.   
@@ -528,7 +528,7 @@ check_dist(white_wine_log.free_sulfur_dioxide, white_wine_log.free_sulfur_dioxid
 
 
 
-![png](images/output_31_1.png)
+![png](../images/output_31_1.png)
 
 
 
@@ -548,7 +548,7 @@ fig.set_title('quality vs. free_sulfur_dioxide')
 
 
 
-![png](images/output_32_1.png)
+![png](../images/output_32_1.png)
 
 
 It does not look like there is much of a relationship here. The median free_sulfur_dioxide of quality = 4 is slightly lower, but this might be noise, as the medians for the rest of the qualities seem to be roughly equal. 
@@ -586,7 +586,7 @@ sns.countplot(x=white_wine.quality, color = dark_yellow).set_title('White Wine Q
 
 
 
-![png](images/output_36_1.png)
+![png](../images/output_36_1.png)
 
 
 ## Linear Probability Model (LPM)
@@ -744,7 +744,7 @@ plt.ylabel('Residuals')
 
 
 
-![png](images/output_40_1.png)
+![png](../images/output_40_1.png)
 
 
 This looks like a somewhat well-behaved residuals vs. fitted values plot. Anything on the line represents a correctly predicted quality (error = 0). The 'lines' in our graph comes from the fact that our independent variable is binary. We can see one of the cons mentioned above for LPM, which is that there are predictions that are out bounds, greater than 1 or less than 0. 
@@ -957,7 +957,7 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 ```
 
 
-![png](images/output_53_0.png)
+![png](../images/output_53_0.png)
 
 
 #### T-tests
@@ -1248,7 +1248,7 @@ plt.scatter(result.index, result['cooks_d'], color = dark_yellow)
 
 
 
-![png](images/output_62_1.png)
+![png](../images/output_62_1.png)
 
 
 
@@ -1432,7 +1432,7 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 ```
 
 
-![png](images/output_72_0.png)
+![png](../images/output_72_0.png)
 
 
 The scatter plots show that volatile_acidity, free_sulfur_dioxide, ph, sulphates, and alcohol have linear realtionships with the log-odds. On the other hand, residual_sugar, chlorides, and bound_sulfur_dioxide do not look as linear. We could perform some transformations (ie. square-root, 2 or 3-power terms, etc.) on these variables, but since these transformations will limit the interpretation of these variables, I will not be performing them.
@@ -1607,7 +1607,7 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 ```
 
 
-![png](images/output_80_0.png)
+![png](../images/output_80_0.png)
 
 
 
@@ -1623,7 +1623,7 @@ sns.distplot(lpm_probabilities, color = dark_yellow)
 
 
 
-![png](images/output_81_1.png)
+![png](../images/output_81_1.png)
 
 
 
@@ -1656,7 +1656,7 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 ```
 
 
-![png](images/output_84_0.png)
+![png](../images/output_84_0.png)
 
 
 Upon seeing the results, we see that all of the independent variables, except for chlorides, have a linear relationship with the log-odds. Also, notice that the Logit produces probabilites between 0 and 0.85. Since our model is producing a wide variety of probabilities, it is best to use the Logit because the LPM will produce extreme values. Now, let's check the relationship between log-odds and the independent variables. A good rule of thumb is that if the probabilites are between 0.2 and 0.8, log-odds will be linearly related to the independent variables.
@@ -1674,7 +1674,7 @@ sns.scatterplot(x=logit_probabilities, y=log_odds, color = dark_yellow)
 
 
 
-![png](images/output_86_1.png)
+![png](../images/output_86_1.png)
 
 
 We confirmed that there is a linear relationship between probability, log-odds, and our independent variables. This means that LPM and Logit should fit similarly. However, since there is a good percentage of examples that are predicted below 0 in the LPM, we prefer the Logit.
