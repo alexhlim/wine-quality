@@ -1001,7 +1001,7 @@ Since -2.129 < -1.96, we reject the null hypothesis. <b>chlorides</b> is statist
 <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{freesulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{freesulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{freesulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{freesulfurdioxide}}&space;=&space;\frac{0.0014&space;-&space;0}{0}&space;=&space;\text{undefined.}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{freesulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{freesulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{freesulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{freesulfurdioxide}}&space;=&space;\frac{0.0014&space;-&space;0}{0}&space;=&space;\text{undefined.}" title="H_{0}: {\beta}_{freesulfurdioxide} = 0 \\ H_{1}: {\beta}_{freesulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{freesulfurdioxide}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{freesulfurdioxide}} = \frac{0.0014 - 0}{0} = \text{undefined.}" /></a>
 <br>
 <br>
-$However, we can find the true value on the chart: t = 4.056. Since 3.970 > 1.96, we reject the null hypothesis. <b>free_sulfur_dioxide</b> is statistically significant. 
+However, we can find the true value on the chart: t = 4.056. Since 3.970 > 1.96, we reject the null hypothesis. <b>free_sulfur_dioxide</b> is statistically significant. 
 
 **ph**
 <br>
