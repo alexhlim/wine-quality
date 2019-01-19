@@ -557,7 +557,7 @@ It does not look like there is much of a relationship here. The median free_sulf
 
 ### Models
 
-Now that we're finished exploring the features of white_wine, we need to pick a model to fulfill our goals. For this exercise, I will be using a regression model. To prepare, I will convert my dependent variable, quality, into a binary variable, where 1 represents 'good'  (quality $>=$ 7) white wine and 0 represents 'bad' (quality $<$ 7) white wine. Since we have a binary dependent varaible, quality (our 'y'), and continuous independent variables (our 'x's'), I have the choice of picking the following models:
+Now that we're finished exploring the features of white_wine, we need to pick a model to fulfill our goals. For this exercise, I will be using a regression model. To prepare, I will convert my dependent variable, quality, into a binary variable, where 1 represents 'good'  (quality $`>=`$ 7) white wine and 0 represents 'bad' (quality $`<`$ 7) white wine. Since we have a binary dependent varaible, quality (our 'y'), and continuous independent variables (our 'x's'), I have the choice of picking the following models:
 
 1. **Linear Probability Model (LPM)**
 2. **Logistic Regression (Logit)**
@@ -778,9 +778,8 @@ There should be no correlation between independent variables. This is very impor
 
 We will be checking this by using the Variance Inflation Factor (VIF).
 
-- VIF $=$ 1 (Not correlated)
-- 1 $<$ VIF $<$ 5 (Moderately correlated)
-- VIF $>=$ 5 (Highly correlated)
+- 1 $`<`$ VIF $`<`$ 5 (Moderately correlated)
+- VIF $`>=`$ 5 (Highly correlated)
 
 
 ```python
@@ -966,94 +965,94 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 
 We see that most of the features look roughly normally distributed, but some are not (ie. alcohol). The t-test should still be valid because of the central limit theorem, as a sample size increases (to infinity) the distribution will converge to a normal distribution. 
 
-$ \\ {\alpha} = 0.05$, critical value is ${ \pm 1.96}$
+$` \\ {\alpha} = 0.05$, critical value is ${ \pm 1.96}`$
 
 **fixed_acidity**
 <br>
 <br>
-$H_{0}: {\beta}_{fixedacidity} = 0 \\
+$`H_{0}: {\beta}_{fixedacidity} = 0 \\
 H_{1}: {\beta_{fixedacidity}} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\$
-$\text{Since} -0.600 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{fixed_acidity is not statistically significant.}$ 
+t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\`$
+$`\text{Since} -0.600 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{fixed_acidity is not statistically significant.}`$ 
 
 **volatile_acidity**
 <br>
 <br>
-$H_{0}: {\beta}_{volatileacidity} = 0 \\
+$`H_{0}: {\beta}_{volatileacidity} = 0 \\
 H_{1}: {\beta}_{volatileacidity} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{volatileacidity}}  \hspace{1mm} - \hspace{1mm} 0}{\sigma_{volatileacidity}} = \frac{-0.3495 - 0}{0.056} = -6.241 \\$
-$\text{Since} -6.241 < -1.96, \text{we reject the null hypothesis. } \textbf{volatile_acidity is statistically significant.}$ 
+t = \frac{{\hat{\beta}_{volatileacidity}}  \hspace{1mm} - \hspace{1mm} 0}{\sigma_{volatileacidity}} = \frac{-0.3495 - 0}{0.056} = -6.241 \\`$
+$`\text{Since} -6.241 < -1.96, \text{we reject the null hypothesis. } \textbf{volatile_acidity is statistically significant.}`$ 
 
 **citric_acid**
 <br>
 <br>
-$H_{0}: {\beta}_{citricacid} = 0 \\
+$`H_{0}: {\beta}_{citricacid} = 0 \\
 H_{1}: {\beta}_{citricacid} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{citricacid}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{citricacid}} = \frac{-0.0573 - 0}{0.048} = -0.985\\$
-$\text{Since} -0.985 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{citric_acid is not statistically significant.}$ 
+t = \frac{{\hat{\beta}_{citricacid}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{citricacid}} = \frac{-0.0573 - 0}{0.048} = -0.985\\`$
+$`\text{Since} -0.985 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{citric_acid is not statistically significant.}`$ 
 
 **residual_sugar**
 <br>
 <br>
-$H_{0}: {\beta}_{residualsugar} = 0 \\
+$`H_{0}: {\beta}_{residualsugar} = 0 \\
 H_{1}: {\beta}_{residualsugar} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{residualsugar}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{residualsugar}} = \frac{0.0068 - 0}{0.001} = 6.7 $
+t = \frac{{\hat{\beta}_{residualsugar}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{residualsugar}} = \frac{0.0068 - 0}{0.001} = 6.7 `$
 
-$ \text{Since } 6.7 > 1.96, \text{we reject the null hypothesis. } \textbf{residual_sugar is statistically significant.}$ 
+$` \text{Since } 6.7 > 1.96, \text{we reject the null hypothesis. } \textbf{residual_sugar is statistically significant.}`$ 
 
 **chlorides**
 <br>
 <br>
-$H_{0}: {\beta}_{chlorides} = 0 \\
+$`H_{0}: {\beta}_{chlorides} = 0 \\
 H_{1}: {\beta}_{chlorides} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{chlorides}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{chlorides}} = \frac{-0.5728 - 0}{0.269} = -2.129 \\$
-$\text{Since } -2.129 < -1.96, \text{we reject the null hypothesis. } \textbf{chlorides is statistically significant.}$ 
+t = \frac{{\hat{\beta}_{chlorides}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{chlorides}} = \frac{-0.5728 - 0}{0.269} = -2.129 \\`$
+$`\text{Since } -2.129 < -1.96, \text{we reject the null hypothesis. } \textbf{chlorides is statistically significant.}`$ 
 
 **free_sulfur_dioxide**
 <br>
 <br>
-$H_{0}: {\beta}_{freesulfurdioxide} = 0 \\
+$`H_{0}: {\beta}_{freesulfurdioxide} = 0 \\
 H_{1}: {\beta}_{freesulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{freesulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{freesulfurdioxide}} = \frac{0.0014 - 0}{0} = \text{undefined. However, we can find the true value on the chart: } t = 4.056$ 
+t = \frac{{\hat{\beta}_{freesulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{freesulfurdioxide}} = \frac{0.0014 - 0}{0} = \text{undefined. However, we can find the true value on the chart: } t = 4.056`$ 
 
-$\text{Since } 3.970 > 1.96, \text{we reject the null hypothesis. } \textbf{free_sulfur_dioxide is statistically significant.}$ 
+$`\text{Since } 3.970 > 1.96, \text{we reject the null hypothesis. } \textbf{free_sulfur_dioxide is statistically significant.}`$ 
 
 **ph**
 <br>
 <br>
-$H_{0}: {\beta}_{ph} = 0 \\
+$`H_{0}: {\beta}_{ph} = 0 \\
 H_{1}: {\beta}_{ph} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{ph}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{ph}} = \frac{0.1106 - 0}{0.041} = 2.698$ 
+t = \frac{{\hat{\beta}_{ph}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{ph}} = \frac{0.1106 - 0}{0.041} = 2.698`$ 
 
-$\text{Since } 2.698 > 1.96, \text{we reject the null hypothesis. } \textbf{ph is statistically significant.}$ 
+$`\text{Since } 2.698 > 1.96, \text{we reject the null hypothesis. } \textbf{ph is statistically significant.}`$ 
 
 
 **sulphates**
 <br>
 <br>
-$H_{0}: {\beta}_{sulphates} = 0 \\
+$`H_{0}: {\beta}_{sulphates} = 0 \\
 H_{1}: {\beta}_{sulphates} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{sulphates}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{sulphates}} = \frac{0.1842 - 0}{0.048} = 3.838$ 
+t = \frac{{\hat{\beta}_{sulphates}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{sulphates}} = \frac{0.1842 - 0}{0.048} = 3.838`$ 
 
-$\text{Since } 3.838 > 1.96, \text{we reject the null hypothesis. } \textbf{sulphates is statistically significant.}$
+$`\text{Since } 3.838 > 1.96, \text{we reject the null hypothesis. } \textbf{sulphates is statistically significant.}`$
 
 **alcohol**
 <br>
 <br>
-$H_{0}: {\beta}_{alcohol} = 0 \\
+$`H_{0}: {\beta}_{alcohol} = 0 \\
 H_{1}: {\beta}_{alcohol} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{alcohol}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{alcohol}} = \frac{0.1365 - 0}{0.006} = 22.75$ 
+t = \frac{{\hat{\beta}_{alcohol}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{alcohol}} = \frac{0.1365 - 0}{0.006} = 22.75`$ 
 
-$\text{Since } 22.75 > 1.96, \text{we reject the null hypothesis. } \textbf{alcohol is statistically significant.}$
+$`\text{Since } 22.75 > 1.96, \text{we reject the null hypothesis. } \textbf{alcohol is statistically significant.}`$
 
 **bound_sulfur_dioxide**
 <br>
 <br>
-$H_{0}: {\beta}_{boundsulfurdioxide} = 0 \\
+$`H_{0}: {\beta}_{boundsulfurdioxide} = 0 \\
 H_{1}: {\beta}_{boundsulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{boundsulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{boundsulfurdioxide}} = \frac{-0.0005 - 0}{0.000} = \text{undefined. However, we can find the true value on the chart: } t = -2.681$ 
+t = \frac{{\hat{\beta}_{boundsulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{boundsulfurdioxide}} = \frac{-0.0005 - 0}{0.000} = \text{undefined. However, we can find the true value on the chart: } t = -2.681`$ 
 
-$\text{Since } -2.681 < -1.96, \text{we reject the null hypothesis. } \textbf{bound_sulfur_dioxide is statistically significant.}$
+$`\text{Since } -2.681 < -1.96, \text{we reject the null hypothesis. } \textbf{bound_sulfur_dioxide is statistically significant.}`$
 
 
 
@@ -1077,9 +1076,9 @@ white_wine = white_wine.drop(['fixed_acidity', 'citric_acid'],axis=1)
 
 #### Cook's Distance
 
-We can identify outliers using a metric called Cooks' distance. I have chosen the criteria: $F_{0.5}(k,n-k)$, where $k$ is the number of regessors and $n$ is our sample size. Thus,
+We can identify outliers using a metric called Cooks' distance. I have chosen the criteria: $F_{0.5}(k,n-k)$, where $k$ is the number of regessors and $`n`$ is our sample size. Thus,
 
-$F_{0.5}\hspace{1mm}(4898 - 8) = 1.94 $
+$`F_{0.5}\hspace{1mm}(4898 - 8) = 1.94 `$
 
 Any points that have an score of 1.94 or above will be considered an outlier.
 
@@ -1558,19 +1557,19 @@ logit_results = sm.Logit(y, X).fit()
 
 This model assumes that the probability p is a linear function of the regressors. Thus, solving for p would be the following:
 
-$$ p = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\ $$
+$` p = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\ `$
 
 #### Logistic Regression
 
 On the other hand, the logistic model assumes that the natural log of the odds is a linear function of the independent variables. We have the following equation:
 
-$$y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} $$
+$`y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} `$
 
-where $\ln(\frac{p}{1-p})$ are the log-odds and $p$ is the probability.
+where $`\ln(\frac{p}{1-p})`$ are the log-odds and $p$ is the probability.
 
-By using the $\text{predict(X)}$ function in statsmodel, we solve for the log-odds. In order to solve for p we must calculate the following: 
+By using the $`\text{predict(X)}`$ function in statsmodel, we solve for the log-odds. In order to solve for p we must calculate the following: 
 
-$$
+```math
 y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\[10pt]
 \rightarrow \exp({\ln(\frac{p}{1-p})}) = \exp(y) \\[10pt]
 \rightarrow \frac{p}{1-p} = e^{y} \\[10pt]
@@ -1580,15 +1579,15 @@ y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\
 \rightarrow p(1 + e^{y}) = e^{y} \\[10pt]
 \rightarrow p = \frac{e^{y}}{1 + e^{y}} \\[10pt]
 \rightarrow p = \frac{e^y}{1 + e^y} \\ \\
-$$
+```
 
 To simplify it further:
 
-$$ 
+```math 
 p = \frac{e^y}{1 + e^y} \times \frac{e^{-y}}{e^{-y}} \\[10pt]
 \rightarrow \frac{e^y \times e^{-y}}{e^{-y} + e^{y} \times e^{-y}} \\[10pt]
 \rightarrow \frac{1}{1 + e^{-y}} \\[10pt]
-$$
+```
 
 Now that we have solved for the probability for both models, let's test to see which model fits better. First, I will be testing the LPM by checking what type of probabilities it will produce. Then, I will check the logit to see if it fits better by testing linearity of log-odds and probabilities.
 
