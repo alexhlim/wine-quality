@@ -67,19 +67,6 @@ white_wine.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -557,7 +544,7 @@ It does not look like there is much of a relationship here. The median free_sulf
 
 ### Models
 
-Now that we're finished exploring the features of white_wine, we need to pick a model to fulfill our goals. For this exercise, I will be using a regression model. To prepare, I will convert my dependent variable, quality, into a binary variable, where 1 represents 'good'  (quality $>=$ 7) white wine and 0 represents 'bad' (quality $<$ 7) white wine. Since we have a binary dependent varaible, quality (our 'y'), and continuous independent variables (our 'x's'), I have the choice of picking the following models:
+Now that we're finished exploring the features of white_wine, we need to pick a model to fulfill our goals. For this exercise, I will be using a regression model. To prepare, I will convert my dependent variable, quality, into a binary variable, where 1 represents 'good'  (quality >= 7) white wine and 0 represents 'bad' (quality < 7) white wine. Since we have a binary dependent varaible, quality (our 'y'), and continuous independent variables (our 'x's'), I have the choice of picking the following models:
 
 1. **Linear Probability Model (LPM)**
 2. **Logistic Regression (Logit)**
@@ -778,9 +765,9 @@ There should be no correlation between independent variables. This is very impor
 
 We will be checking this by using the Variance Inflation Factor (VIF).
 
-- VIF $=$ 1 (Not correlated)
-- 1 $<$ VIF $<$ 5 (Moderately correlated)
-- VIF $>=$ 5 (Highly correlated)
+- VIF = 1 (Not correlated)
+- 1 < VIF < 5 (Moderately correlated)
+- VIF >= 5 (Highly correlated)
 
 
 ```python
@@ -966,15 +953,13 @@ for feature, ax in zip(features, range(len(white_wine.columns)+1)):
 
 We see that most of the features look roughly normally distributed, but some are not (ie. alcohol). The t-test should still be valid because of the central limit theorem, as a sample size increases (to infinity) the distribution will converge to a normal distribution. 
 
-$ \\ {\alpha} = 0.05$, critical value is ${ \pm 1.96}$
+<a href="https://www.codecogs.com/eqnedit.php?latex=\\&space;{\alpha}&space;=&space;0.05$,&space;critical&space;value&space;is&space;${&space;\pm&space;1.96}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\\&space;{\alpha}&space;=&space;0.05$,&space;critical&space;value&space;is&space;${&space;\pm&space;1.96}" title="\\ {\alpha} = 0.05$, critical value is ${ \pm 1.96}" /></a>
 
 **fixed_acidity**
 <br>
 <br>
-$H_{0}: {\beta}_{fixedacidity} = 0 \\
-H_{1}: {\beta_{fixedacidity}} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\$
-$\text{Since} -0.600 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{fixed_acidity is not statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" title="H_{0}: {\beta}_{fixedacidity} = 0 \\ H_{1}: {\beta_{fixedacidity}} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\" /></a>
+Since -0.600 > -1.96, we fail to reject the null hypothesis.<b>fixed_acidity</b> is not statistically significant.}
 
 **volatile_acidity**
 <br>
