@@ -1347,19 +1347,19 @@ Logit uses Maximum Likelihood Estimation (MLE) to fit the regression.
 
 ### Assumptions 
 
-1) <b>Binary Dependent Variable</b>: requires the dependent variable to be binary.
+1)<b>Binary Dependent Variable</b>: requires the dependent variable to be binary.
 <br>
 <br>
-2) <b>Samples are i.i.d.</b>: samples should be independent of each other. 
+2)<b>Samples are i.i.d.</b>: samples should be independent of each other. 
 <br>
 <br>
-3) <b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables. 
+3)<b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables. 
 <br>
 <br>
-4) <b>Linearity of Independent Variables and Log Odds</b>: requires that the independent variables are linearly related to the log odds.
+4)<b>Linearity of Independent Variables and Log Odds</b>: requires that the independent variables are linearly related to the log odds.
 <br>
 <br>
-5) <b>Large Sample Size</b>
+5)<b>Large Sample Size</b>
 
 
 **Pros**
