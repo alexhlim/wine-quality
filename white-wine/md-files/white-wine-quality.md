@@ -586,16 +586,16 @@ LPM uses Ordinary Least Squares (OLS) as a method to fit the regression. It esse
 
 In order for our results to be interpretable, it is very important that all of our variables do not violate any of the following. These are the OLS assumptions for multivariate regression.
 
-1. **Linear Relationship**: there should be a linear relationship between the independent variable (y) and its dependent variables (X).
+1. <b>Linear Relationship</b> there should be a linear relationship between the independent variable (y) and its dependent variables (X).
 <br>
 <br>
-2. **No Autocorrelation**: there should be no correlation between the error terms.
+2. <b>No Autocorrelation</b>: there should be no correlation between the error terms.
 <br>
 <br>
-3. **No Perfect Multicollinearity**: there should be no correlation between the independent variables.
+3. <b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables.
 <br>
 <br>
-4. **No Large Outliers**: there should be no large outliers.
+4. <b>No Large Outliers</b>: there should be no large outliers.
 <br>
 <br>
 
@@ -1026,7 +1026,7 @@ Since 3.838 > 1.96, we reject the null hypothesis.  <b>sulphates</b> is statisti
 <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{alcohol}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{alcohol}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{alcohol}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{alcohol}}&space;=&space;\frac{0.1365&space;-&space;0}{0.006}&space;=&space;22.75" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{alcohol}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{alcohol}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{alcohol}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{alcohol}}&space;=&space;\frac{0.1365&space;-&space;0}{0.006}&space;=&space;22.75" title="H_{0}: {\beta}_{alcohol} = 0 \\ H_{1}: {\beta}_{alcohol} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{alcohol}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{alcohol}} = \frac{0.1365 - 0}{0.006} = 22.75" /></a>
 <br>
 <br>
-Since } 22.75 > 1.96, we reject the null hypothesis. <b>alcohol</b> is statistically significant.
+Since 22.75 > 1.96, we reject the null hypothesis. <b>alcohol</b> is statistically significant.
 
 **bound_sulfur_dioxide**
 <br>
@@ -1347,19 +1347,19 @@ Logit uses Maximum Likelihood Estimation (MLE) to fit the regression.
 
 ### Assumptions 
 
-1. **Binary Dependent Variable**: requires the dependent variable to be binary.
+1. <b>Binary Dependent Variable</b>: requires the dependent variable to be binary.
 <br>
 <br>
-2. **Samples are i.i.d.**: samples should be independent of each other. 
+2. <b>Samples are i.i.d.</b>: samples should be independent of each other. 
 <br>
 <br>
-3. **No Perfect Multicollinearity**: there should be no correlation between the independent variables. 
+3. <b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables. 
 <br>
 <br>
-4. **Linearity of Independent Variables and Log Odds**: requires that the independent variables are linearly related to the log odds.
+4. <b>Linearity of Independent Variables and Log Odds</b>: requires that the independent variables are linearly related to the log odds.
 <br>
 <br>
-5. **Large Sample Size**
+5. <b>Large Sample Size</b>
 
 **Pros**
 - predictions bounded from 0 to 1
@@ -1519,24 +1519,24 @@ logit_results = sm.Logit(y, X).fit()
              Iterations 7
 
 
-###  Calculating $p$
+###  Calculating p
 
 
 #### Linear Probability Model
 
 This model assumes that the probability p is a linear function of the regressors. Thus, solving for p would be the following:
 
-$$ p = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\ $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;p&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;p&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\&space;$$" title="$$ p = \beta_{0} + \beta_{1}x_{1} + \dots + \beta_{k}x_{k} \\ $$" /></a>
 
 #### Logistic Regression
 
 On the other hand, the logistic model assumes that the natural log of the odds is a linear function of the independent variables. We have the following equation:
 
-$$y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=$$y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;$$" title="$$y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots + \beta_{k}x_{k} $$" /></a>
 
-where $\ln(\frac{p}{1-p})$ are the log-odds and $p$ is the probability.
+where <a href="https://www.codecogs.com/eqnedit.php?latex=\ln(\frac{p}{1-p})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\ln(\frac{p}{1-p})" title="\ln(\frac{p}{1-p})" /></a> are the log-odds and <i>p</i> is the probability.
 
-By using the $\text{predict(X)}$ function in statsmodel, we solve for the log-odds. In order to solve for p we must calculate the following: 
+By using the predict(X) function in statsmodel, we solve for the log-odds. In order to solve for p we must calculate the following: 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=$$&space;y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\[10pt]&space;\rightarrow&space;\exp({\ln(\frac{p}{1-p})})&space;=&space;\exp(y)&space;\\[10pt]&space;\rightarrow&space;\frac{p}{1-p}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;(1-p)e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;e^{y}&space;-&space;pe^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;&plus;&space;pe^{y}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p(1&space;&plus;&space;e^{y})&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^{y}}{1&space;&plus;&space;e^{y}}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\\&space;\\&space;$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$&space;y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\[10pt]&space;\rightarrow&space;\exp({\ln(\frac{p}{1-p})})&space;=&space;\exp(y)&space;\\[10pt]&space;\rightarrow&space;\frac{p}{1-p}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;(1-p)e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;e^{y}&space;-&space;pe^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;&plus;&space;pe^{y}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p(1&space;&plus;&space;e^{y})&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^{y}}{1&space;&plus;&space;e^{y}}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\\&space;\\&space;$$" title="$$ y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots + \beta_{k}x_{k} \\[10pt] \rightarrow \exp({\ln(\frac{p}{1-p})}) = \exp(y) \\[10pt] \rightarrow \frac{p}{1-p} = e^{y} \\[10pt] \rightarrow p = (1-p)e^{y} \\[10pt] \rightarrow p = e^{y} - pe^{y} \\[10pt] \rightarrow p + pe^{y} = e^{y} \\[10pt] \rightarrow p(1 + e^{y}) = e^{y} \\[10pt] \rightarrow p = \frac{e^{y}}{1 + e^{y}} \\[10pt] \rightarrow p = \frac{e^y}{1 + e^y} \\ \\ $$" /></a>
 
