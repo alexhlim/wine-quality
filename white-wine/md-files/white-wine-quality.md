@@ -586,16 +586,16 @@ LPM uses Ordinary Least Squares (OLS) as a method to fit the regression. It esse
 
 In order for our results to be interpretable, it is very important that all of our variables do not violate any of the following. These are the OLS assumptions for multivariate regression.
 
-1. <b>Linear Relationship</b> there should be a linear relationship between the independent variable (y) and its dependent variables (X).
+1) <b>Linear Relationship</b> there should be a linear relationship between the independent variable (y) and its dependent variables (X).
 <br>
 <br>
-2. <b>No Autocorrelation</b>: there should be no correlation between the error terms.
+2) <b>No Autocorrelation</b>: there should be no correlation between the error terms.
 <br>
 <br>
-3. <b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables.
+3) <b>No Perfect Multicollinearity</b>: there should be no correlation between the independent variables.
 <br>
 <br>
-4. <b>No Large Outliers</b>: there should be no large outliers.
+4) <b>No Large Outliers</b>: there should be no large outliers.
 <br>
 <br>
 
