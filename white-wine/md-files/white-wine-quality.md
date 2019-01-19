@@ -1346,7 +1346,6 @@ lpm.summary()
 Logit uses Maximum Likelihood Estimation (MLE) to fit the regression.
 
 ### Assumptions 
-
 1. <b>Binary Dependent Variable</b>: requires the dependent variable to be binary.
 <br>
 <br>
