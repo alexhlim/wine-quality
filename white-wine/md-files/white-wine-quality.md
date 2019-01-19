@@ -960,86 +960,81 @@ We see that most of the features look roughly normally distributed, but some are
 <br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" title="H_{0}: {\beta}_{fixedacidity} = 0 \\ H_{1}: {\beta_{fixedacidity}} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\" /></a>
 <br>
-Since -0.600 > -1.96, we fail to reject the null hypothesis. <b>fixed_acidity</b> is not statistically significant.}
+<br>
+Since -0.600 > -1.96, we fail to reject the null hypothesis. <b>fixed_acidity</b> is not statistically significant.
 
 **volatile_acidity**
 <br>
 <br>
-$H_{0}: {\beta}_{volatileacidity} = 0 \\
-H_{1}: {\beta}_{volatileacidity} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{volatileacidity}}  \hspace{1mm} - \hspace{1mm} 0}{\sigma_{volatileacidity}} = \frac{-0.3495 - 0}{0.056} = -6.241 \\$
-$\text{Since} -6.241 < -1.96, \text{we reject the null hypothesis. } \textbf{volatile_acidity is statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{volatileacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{volatileacidity}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{volatileacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{volatileacidity}}&space;=&space;\frac{-0.3495&space;-&space;0}{0.056}&space;=&space;-6.241&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{volatileacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{volatileacidity}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{volatileacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{volatileacidity}}&space;=&space;\frac{-0.3495&space;-&space;0}{0.056}&space;=&space;-6.241&space;\\" title="H_{0}: {\beta}_{volatileacidity} = 0 \\ H_{1}: {\beta}_{volatileacidity} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{volatileacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{volatileacidity}} = \frac{-0.3495 - 0}{0.056} = -6.241 \\" /></a>
+<br>
+<br>
+Since -6.241 < -1.96, we reject the null hypothesis. <b>volatile_acidity</b> is statistically significant.
 
 **citric_acid**
 <br>
 <br>
-$H_{0}: {\beta}_{citricacid} = 0 \\
-H_{1}: {\beta}_{citricacid} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{citricacid}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{citricacid}} = \frac{-0.0573 - 0}{0.048} = -0.985\\$
-$\text{Since} -0.985 > -1.96, \text{we fail to reject the null hypothesis. } \textbf{citric_acid is not statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{citricacid}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{citricacid}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{citricacid}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{citricacid}}&space;=&space;\frac{-0.0573&space;-&space;0}{0.048}&space;=&space;-0.985\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{citricacid}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{citricacid}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{citricacid}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{citricacid}}&space;=&space;\frac{-0.0573&space;-&space;0}{0.048}&space;=&space;-0.985\\" title="H_{0}: {\beta}_{citricacid} = 0 \\ H_{1}: {\beta}_{citricacid} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{citricacid}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{citricacid}} = \frac{-0.0573 - 0}{0.048} = -0.985\\" /></a>
+<br>
+<br>
+Since -0.985 > -1.96, we fail to reject the null hypothesis. <b>citric_acid</b> is not statistically significant. 
 
 **residual_sugar**
 <br>
 <br>
-$H_{0}: {\beta}_{residualsugar} = 0 \\
-H_{1}: {\beta}_{residualsugar} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{residualsugar}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{residualsugar}} = \frac{0.0068 - 0}{0.001} = 6.7 $
-
-$ \text{Since } 6.7 > 1.96, \text{we reject the null hypothesis. } \textbf{residual_sugar is statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{residualsugar}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{residualsugar}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{residualsugar}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{residualsugar}}&space;=&space;\frac{0.0068&space;-&space;0}{0.001}&space;=&space;6.7" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{residualsugar}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{residualsugar}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{residualsugar}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{residualsugar}}&space;=&space;\frac{0.0068&space;-&space;0}{0.001}&space;=&space;6.7" title="H_{0}: {\beta}_{residualsugar} = 0 \\ H_{1}: {\beta}_{residualsugar} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{residualsugar}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{residualsugar}} = \frac{0.0068 - 0}{0.001} = 6.7" /></a>
+<br>
+<br>
+Since 6.7 > 1.96, we reject the null hypothesis. <b>residual_sugar</b> is statistically significant.
 
 **chlorides**
 <br>
 <br>
-$H_{0}: {\beta}_{chlorides} = 0 \\
-H_{1}: {\beta}_{chlorides} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{chlorides}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{chlorides}} = \frac{-0.5728 - 0}{0.269} = -2.129 \\$
-$\text{Since } -2.129 < -1.96, \text{we reject the null hypothesis. } \textbf{chlorides is statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{chlorides}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{chlorides}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{chlorides}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{chlorides}}&space;=&space;\frac{-0.5728&space;-&space;0}{0.269}&space;=&space;-2.129&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{chlorides}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{chlorides}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{chlorides}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{chlorides}}&space;=&space;\frac{-0.5728&space;-&space;0}{0.269}&space;=&space;-2.129&space;\\" title="H_{0}: {\beta}_{chlorides} = 0 \\ H_{1}: {\beta}_{chlorides} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{chlorides}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{chlorides}} = \frac{-0.5728 - 0}{0.269} = -2.129 \\" /></a>
+<br>
+<br>
+Since -2.129 < -1.96, we reject the null hypothesis. <b>chlorides</b> is statistically significant.
 
 **free_sulfur_dioxide**
 <br>
 <br>
-$H_{0}: {\beta}_{freesulfurdioxide} = 0 \\
-H_{1}: {\beta}_{freesulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{freesulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{freesulfurdioxide}} = \frac{0.0014 - 0}{0} = \text{undefined. However, we can find the true value on the chart: } t = 4.056$ 
-
-$\text{Since } 3.970 > 1.96, \text{we reject the null hypothesis. } \textbf{free_sulfur_dioxide is statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{freesulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{freesulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{freesulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{freesulfurdioxide}}&space;=&space;\frac{0.0014&space;-&space;0}{0}&space;=&space;\text{undefined.}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{freesulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{freesulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{freesulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{freesulfurdioxide}}&space;=&space;\frac{0.0014&space;-&space;0}{0}&space;=&space;\text{undefined.}" title="H_{0}: {\beta}_{freesulfurdioxide} = 0 \\ H_{1}: {\beta}_{freesulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{freesulfurdioxide}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{freesulfurdioxide}} = \frac{0.0014 - 0}{0} = \text{undefined.}" /></a>
+<br>
+<br>
+$However, we can find the true value on the chart: t = 4.056. Since 3.970 > 1.96, we reject the null hypothesis. <b>free_sulfur_dioxide</b> is statistically significant. 
 
 **ph**
 <br>
 <br>
-$H_{0}: {\beta}_{ph} = 0 \\
-H_{1}: {\beta}_{ph} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{ph}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{ph}} = \frac{0.1106 - 0}{0.041} = 2.698$ 
-
-$\text{Since } 2.698 > 1.96, \text{we reject the null hypothesis. } \textbf{ph is statistically significant.}$ 
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{ph}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{ph}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{ph}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{ph}}&space;=&space;\frac{0.1106&space;-&space;0}{0.041}&space;=&space;2.698" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{ph}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{ph}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{ph}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{ph}}&space;=&space;\frac{0.1106&space;-&space;0}{0.041}&space;=&space;2.698" title="H_{0}: {\beta}_{ph} = 0 \\ H_{1}: {\beta}_{ph} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{ph}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{ph}} = \frac{0.1106 - 0}{0.041} = 2.698" /></a>
+<br>
+<br>
+Since 2.698 > 1.96, we reject the null hypothesis. <b>ph</b> is statistically significant.
 
 
 **sulphates**
 <br>
 <br>
-$H_{0}: {\beta}_{sulphates} = 0 \\
-H_{1}: {\beta}_{sulphates} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{sulphates}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{sulphates}} = \frac{0.1842 - 0}{0.048} = 3.838$ 
-
-$\text{Since } 3.838 > 1.96, \text{we reject the null hypothesis. } \textbf{sulphates is statistically significant.}$
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{sulphates}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{sulphates}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{sulphates}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{sulphates}}&space;=&space;\frac{0.1842&space;-&space;0}{0.048}&space;=&space;3.838" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{sulphates}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{sulphates}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{sulphates}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{sulphates}}&space;=&space;\frac{0.1842&space;-&space;0}{0.048}&space;=&space;3.838" title="H_{0}: {\beta}_{sulphates} = 0 \\ H_{1}: {\beta}_{sulphates} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{sulphates}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{sulphates}} = \frac{0.1842 - 0}{0.048} = 3.838" /></a>
+<br>
+<br>
+Since 3.838 > 1.96, we reject the null hypothesis.  <b>sulphates</b> is statistically significant.
 
 **alcohol**
 <br>
 <br>
-$H_{0}: {\beta}_{alcohol} = 0 \\
-H_{1}: {\beta}_{alcohol} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{alcohol}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{alcohol}} = \frac{0.1365 - 0}{0.006} = 22.75$ 
-
-$\text{Since } 22.75 > 1.96, \text{we reject the null hypothesis. } \textbf{alcohol is statistically significant.}$
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{alcohol}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{alcohol}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{alcohol}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{alcohol}}&space;=&space;\frac{0.1365&space;-&space;0}{0.006}&space;=&space;22.75" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{alcohol}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{alcohol}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{alcohol}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{alcohol}}&space;=&space;\frac{0.1365&space;-&space;0}{0.006}&space;=&space;22.75" title="H_{0}: {\beta}_{alcohol} = 0 \\ H_{1}: {\beta}_{alcohol} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{alcohol}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{alcohol}} = \frac{0.1365 - 0}{0.006} = 22.75" /></a>
+<br>
+<br>
+Since } 22.75 > 1.96, we reject the null hypothesis. <b>alcohol</b> is statistically significant.
 
 **bound_sulfur_dioxide**
 <br>
 <br>
-$H_{0}: {\beta}_{boundsulfurdioxide} = 0 \\
-H_{1}: {\beta}_{boundsulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm}  0 \\
-t = \frac{{\hat{\beta}_{boundsulfurdioxide}} \hspace{1mm} -  \hspace{1mm} 0}{\sigma_{boundsulfurdioxide}} = \frac{-0.0005 - 0}{0.000} = \text{undefined. However, we can find the true value on the chart: } t = -2.681$ 
-
-$\text{Since } -2.681 < -1.96, \text{we reject the null hypothesis. } \textbf{bound_sulfur_dioxide is statistically significant.}$
+<a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{boundsulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{boundsulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{boundsulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{boundsulfurdioxide}}&space;=&space;\frac{-0.0005&space;-&space;0}{0.000}&space;=&space;\text{undefined.}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{boundsulfurdioxide}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta}_{boundsulfurdioxide}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{boundsulfurdioxide}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{boundsulfurdioxide}}&space;=&space;\frac{-0.0005&space;-&space;0}{0.000}&space;=&space;\text{undefined.}" title="H_{0}: {\beta}_{boundsulfurdioxide} = 0 \\ H_{1}: {\beta}_{boundsulfurdioxide} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{boundsulfurdioxide}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{boundsulfurdioxide}} = \frac{-0.0005 - 0}{0.000} = \text{undefined.}" /></a>
+<br>
+<br>
+However, we can find the true value on the chart: t = -2.681. Since -2.681 < -1.96, we reject the null hypothesis. <b>bound_sulfur_dioxide</b> is statistically significant.
 
 
 
