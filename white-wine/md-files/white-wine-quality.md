@@ -1058,9 +1058,9 @@ white_wine = white_wine.drop(['fixed_acidity', 'citric_acid'],axis=1)
 
 #### Cook's Distance
 
-We can identify outliers using a metric called Cooks' distance. I have chosen the criteria: $F_{0.5}(k,n-k)$, where $k$ is the number of regessors and $n$ is our sample size. Thus,
+We can identify outliers using a metric called Cooks' distance. I have chosen the criteria: <a href="https://www.codecogs.com/eqnedit.php?latex=F_{0.5}(k,n-k)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_{0.5}(k,n-k)" title="F_{0.5}(k,n-k)" /></a>, where k is the number of regessors and n is our sample size. Thus,
 
-$F_{0.5}\hspace{1mm}(4898 - 8) = 1.94 $
+<a href="https://www.codecogs.com/eqnedit.php?latex=F_{0.5}\hspace{1mm}(4898&space;-&space;8)&space;=&space;1.94" target="_blank"><img src="https://latex.codecogs.com/gif.latex?F_{0.5}\hspace{1mm}(4898&space;-&space;8)&space;=&space;1.94" title="F_{0.5}\hspace{1mm}(4898 - 8) = 1.94" /></a>
 
 Any points that have an score of 1.94 or above will be considered an outlier.
 
