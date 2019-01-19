@@ -959,7 +959,8 @@ We see that most of the features look roughly normally distributed, but some are
 <br>
 <br>
 <a href="https://www.codecogs.com/eqnedit.php?latex=H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?H_{0}:&space;{\beta}_{fixedacidity}&space;=&space;0&space;\\&space;H_{1}:&space;{\beta_{fixedacidity}}&space;\hspace{1mm}&space;{\neq}&space;\hspace{1mm}&space;0&space;\\&space;t&space;=&space;\frac{{\hat{\beta}_{fixedacidity}}&space;\hspace{1mm}&space;-&space;\hspace{1mm}&space;0}{\sigma_{fixedacidity}}&space;=&space;\frac{-0.0042&space;-&space;0}{0.007}&space;=&space;-0.600&space;\\" title="H_{0}: {\beta}_{fixedacidity} = 0 \\ H_{1}: {\beta_{fixedacidity}} \hspace{1mm} {\neq} \hspace{1mm} 0 \\ t = \frac{{\hat{\beta}_{fixedacidity}} \hspace{1mm} - \hspace{1mm} 0}{\sigma_{fixedacidity}} = \frac{-0.0042 - 0}{0.007} = -0.600 \\" /></a>
-Since -0.600 > -1.96, we fail to reject the null hypothesis.<b>fixed_acidity</b> is not statistically significant.}
+<br>
+Since -0.600 > -1.96, we fail to reject the null hypothesis. <b>fixed_acidity</b> is not statistically significant.}
 
 **volatile_acidity**
 <br>
@@ -1091,19 +1092,6 @@ result.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
