@@ -38,7 +38,9 @@ between 0 (very bad) and 10 (very excellent).
    - **quality**: score given to the wine between 0 (lowest) and 10 (highest).
    
 ### Goal 
-The goal is to understand and identify what qualities make a good white wine, and pinpoint how exactly each characterisitc positvely or negatively can affect the the quality of white wine. This dataset can either be approached by using classification or regression. Today, I will attempt to understand the relationships utilizing regression. By understanding these relationship, I can make better decisions when purchasing wine.
+The makeup of wine contributes to its overall quality. So what factors affect the quality of white wine and to what magnitude and direction? Given this dataset, there are two approaches: classification or regression. Since we already explored classification through the [red wines project](../../red-wine/md-files/1.red-wine-exploratory-data-analysis.md), I will be utilizing the regression approach with this project. 
+
+Through the regression approach, I want to outline specific factors that correlate posivitely with good quality wine. In doing so, this can help wine producers better target ther wine production process to create the highest quality wine possible.
 
 ## Exploratory Data Analysis (EDA)
 
