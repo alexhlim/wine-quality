@@ -1569,25 +1569,13 @@ where $`\ln(\frac{p}{1-p})`$ are the log-odds and $p$ is the probability.
 
 By using the $`\text{predict(X)}`$ function in statsmodel, we solve for the log-odds. In order to solve for p we must calculate the following: 
 
-```math
-y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots +  \beta_{k}x_{k} \\[10pt]
-\rightarrow \exp({\ln(\frac{p}{1-p})}) = \exp(y) \\[10pt]
-\rightarrow \frac{p}{1-p} = e^{y} \\[10pt]
-\rightarrow p = (1-p)e^{y} \\[10pt]
-\rightarrow p = e^{y} - pe^{y} \\[10pt]
-\rightarrow p + pe^{y} = e^{y} \\[10pt]
-\rightarrow p(1 + e^{y}) = e^{y} \\[10pt]
-\rightarrow p = \frac{e^{y}}{1 + e^{y}} \\[10pt]
-\rightarrow p = \frac{e^y}{1 + e^y} \\ \\
-```
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\[10pt]&space;\rightarrow&space;\exp({\ln(\frac{p}{1-p})})&space;=&space;\exp(y)&space;\\[10pt]&space;\rightarrow&space;\frac{p}{1-p}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;(1-p)e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;e^{y}&space;-&space;pe^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;&plus;&space;pe^{y}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p(1&space;&plus;&space;e^{y})&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^{y}}{1&space;&plus;&space;e^{y}}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\\&space;\\" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y&space;=&space;\ln(\frac{p}{1-p})&space;=&space;\beta_{0}&space;&plus;&space;\beta_{1}x_{1}&space;&plus;&space;\dots&space;&plus;&space;\beta_{k}x_{k}&space;\\[10pt]&space;\rightarrow&space;\exp({\ln(\frac{p}{1-p})})&space;=&space;\exp(y)&space;\\[10pt]&space;\rightarrow&space;\frac{p}{1-p}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;(1-p)e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;e^{y}&space;-&space;pe^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;&plus;&space;pe^{y}&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p(1&space;&plus;&space;e^{y})&space;=&space;e^{y}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^{y}}{1&space;&plus;&space;e^{y}}&space;\\[10pt]&space;\rightarrow&space;p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\\&space;\\" title="y = \ln(\frac{p}{1-p}) = \beta_{0} + \beta_{1}x_{1} + \dots + \beta_{k}x_{k} \\[10pt] \rightarrow \exp({\ln(\frac{p}{1-p})}) = \exp(y) \\[10pt] \rightarrow \frac{p}{1-p} = e^{y} \\[10pt] \rightarrow p = (1-p)e^{y} \\[10pt] \rightarrow p = e^{y} - pe^{y} \\[10pt] \rightarrow p + pe^{y} = e^{y} \\[10pt] \rightarrow p(1 + e^{y}) = e^{y} \\[10pt] \rightarrow p = \frac{e^{y}}{1 + e^{y}} \\[10pt] \rightarrow p = \frac{e^y}{1 + e^y} \\ \\" /></a>
 
 To simplify it further:
 
-```math 
-p = \frac{e^y}{1 + e^y} \times \frac{e^{-y}}{e^{-y}} \\[10pt]
-\rightarrow \frac{e^y \times e^{-y}}{e^{-y} + e^{y} \times e^{-y}} \\[10pt]
-\rightarrow \frac{1}{1 + e^{-y}} \\[10pt]
-```
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\times&space;\frac{e^{-y}}{e^{-y}}&space;\\[10pt]&space;\rightarrow&space;\frac{e^y&space;\times&space;e^{-y}}{e^{-y}&space;&plus;&space;e^{y}&space;\times&space;e^{-y}}&space;\\[10pt]&space;\rightarrow&space;\frac{1}{1&space;&plus;&space;e^{-y}}&space;\\[10pt]" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p&space;=&space;\frac{e^y}{1&space;&plus;&space;e^y}&space;\times&space;\frac{e^{-y}}{e^{-y}}&space;\\[10pt]&space;\rightarrow&space;\frac{e^y&space;\times&space;e^{-y}}{e^{-y}&space;&plus;&space;e^{y}&space;\times&space;e^{-y}}&space;\\[10pt]&space;\rightarrow&space;\frac{1}{1&space;&plus;&space;e^{-y}}&space;\\[10pt]" title="p = \frac{e^y}{1 + e^y} \times \frac{e^{-y}}{e^{-y}} \\[10pt] \rightarrow \frac{e^y \times e^{-y}}{e^{-y} + e^{y} \times e^{-y}} \\[10pt] \rightarrow \frac{1}{1 + e^{-y}} \\[10pt]" /></a>
 
 Now that we have solved for the probability for both models, let's test to see which model fits better. First, I will be testing the LPM by checking what type of probabilities it will produce. Then, I will check the logit to see if it fits better by testing linearity of log-odds and probabilities.
 
